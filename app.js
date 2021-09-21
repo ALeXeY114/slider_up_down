@@ -21,7 +21,7 @@ document.addEventListener('keydown',
 event => {
     if (event.key === 'ArrowUp') {
         changeSlide ('up')
-    } else if(event.key === 'ArrowDown') {
+    } else if   (event.key === 'ArrowDown') {
         changeSlide ('down')
     }
 })
@@ -44,3 +44,4 @@ function changeSlide(direction) {
     mainSlide.style.transform = `translateY(-${activeSlideIndex * height}px)`
 
     sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`
+}
